@@ -4,12 +4,14 @@ import './login.css'
 export default function LoginPage({
   navigateToPlay,
   navigateToAbout,
+  score
 }){
 
   return (
     <div className='page'>
       <div className='non-footer'>
       <header className="header">
+          <span className="score">Score: {score}</span>
           <h1 className='heading'>Hangman</h1>
           <nav className='navbar'>
             <span onClick={navigateToPlay} className='navbar-link' href="#">Play</span>

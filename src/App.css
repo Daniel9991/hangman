@@ -27,6 +27,13 @@ header{
   gap: 1.5rem;
 }
 
+.score{
+  position: absolute;
+  top: 50%;
+  left: 2.5rem;
+  transform: translateY(-50%);
+}
+
 .navbar-link{
   color: black;
   text-decoration: none;

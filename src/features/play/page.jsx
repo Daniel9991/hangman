@@ -10,6 +10,8 @@ import { getRandomIndex } from '../../utils/utils'
 export default function PlayPage({
   navigateToAbout,
   navigateToLogin,
+  score,
+  increaseScore
 }){
 
   const [word, setWord] = useState(getWord())
@@ -38,6 +40,7 @@ export default function PlayPage({
     setLostLives(0)
     setWordLetters(word.split('').map(letter => ({letter, found: false})))
     setGameNum(gameNum + 1)
+    increaseScore(-score)
   }
 
   function onNew(){
@@ -49,6 +52,9 @@ export default function PlayPage({
     setLostLives(0)
     setWordLetters(newWord.split('').map(letter => ({letter, found: false})))
     setGameNum(gameNum + 1)
+
+    if(gameFinished)
+      increaseScore((lives - lostLives) * 10)
   }
 
   function onHint(){
@@ -64,13 +70,14 @@ export default function PlayPage({
       {gameFinished && (
         <section className="modal">
           <article className="modal-box">
-            {lives === lostLives ? "You let the man die" : "You set him free!"}
+            {lives === lostLives ? "You let the man die. Your score was reset." : "You set him free!"}
             <Button onClick={onNew}>New</Button>
           </article>
         </section>
       )}
       <div className='non-footer'>
         <header className="header">
+          <span className="score">Score: {score}</span>
           <h1 className='heading'>Hangman</h1>
           <nav className='navbar'>
             <span onClick={navigateToLogin} className='navbar-link' href="#">Log In</span>

@@ -9,10 +9,15 @@ import './App.css'
 function App() {
 
   const [currentPage, setCurrentPage] = useState("home")
+  const [score, setScore] = useState(0)
 
   function navigateToPlay(){ setCurrentPage("play") }
   function navigateToAbout(){ setCurrentPage("about") }
   function navigateToLogin(){ setCurrentPage("login") }
+
+  function increaseScore(amount){
+    setScore(score + amount)
+  }
 
   return (
     <>
@@ -27,18 +32,22 @@ function App() {
         <PlayPage
           navigateToLogin={navigateToLogin}
           navigateToAbout={navigateToAbout}
+          increaseScore={increaseScore}
+          score={score}
         />
       )}
       {currentPage === "about" && (
         <AboutPage
           navigateToPlay={navigateToPlay}
           navigateToLogin={navigateToLogin}
+          score={score}
         />
       )}
       {currentPage === "login" && (
         <LoginPage
           navigateToPlay={navigateToPlay}
           navigateToAbout={navigateToAbout}
+          score={score}
         />
       )}
     </>

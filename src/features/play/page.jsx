@@ -94,7 +94,7 @@ export default function PlayPage({
           </section>
           <div className='game-controls-wrapper'>
             <WordAndLetters key={gameNum} wordLetters={wordLetters} checkLetter={checkLetter} />
-            <StoryImage />
+            <StoryImage imageIndex={lostLives} />
           </div>
         </main>
       </div>

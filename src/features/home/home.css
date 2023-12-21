@@ -1,0 +1,41 @@
+.home-pane{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1060px;
+  padding: 3rem;
+  margin-top: 3rem;
+}
+
+.home-pane h3{
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.home-pane-sections-wrapper{
+  margin: 3rem auto 0px;
+  display: flex;
+  gap: 5rem;
+  width: fit-content;
+}
+
+.home-pane-section{
+  max-width: 400px;
+}
+
+.home-pane-description-section{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.home-pane-buttons-section{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.home-pane-buttons-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

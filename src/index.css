@@ -4,3 +4,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root{
+  --bg-color: #FFF78A;
+  --secondary-bg-color: #FFE382;
+  --footer-bg-color: #FFC47E;
+  --button-bg-color: #FFAD84;
+  --button-bg-color-hover: #FE9B6A;
+  --correct-letter-bg: #BDEB73;
+  --incorrect-letter-bg: #CC8A6A;
+  /* --default-drop-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25); */
+}
+
+@font-face {
+  font-family: 'AtlanticHeadline-Bold';
+  src: local('AtlanticHeadline-Bold'),
+       url('./assets/fonts/AtlantisHeadline-Bold.otf') format('opentype'),
+       url('./assets/fonts/AtlantisHeadline-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Karmatic-Arcade';
+  src: local('Karmatic-Arcade'),
+       url('./assets/fonts/karmatic-arcade.ttf') format('truetype');
+}
+
+body{
+  font-family: AtlanticHeadline-Bold, sans-serif;
+  word-spacing: 0.2rem; /* This fonts words end up to close to each other without extra word-spacing*/ 
+}

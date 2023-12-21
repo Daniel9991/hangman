@@ -1,0 +1,41 @@
+.login-main{
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.login-form{
+  margin-top: 4rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form-heading{
+  margin-bottom: 4rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.input{
+  border: 2px solid black;
+  background-color: transparent;
+  font-family: AtlanticHeadline-Bold;
+  font-size: 1rem;
+  padding: 1rem;
+  width: 100%;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.input::placeholder{
+  color: rgb(0, 0, 0, 0.6);
+}
+
+.login-prompt{
+  margin-top: 4rem;
+  font-size: 0.75rem;
+  text-align: center;
+}

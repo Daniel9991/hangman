@@ -3,6 +3,7 @@ import { useState } from 'react'
 import PlayPage from './features/play/page'
 import HomePage from './features/home/page'
 import AboutPage from './features/about/page'
+import LoginPage from './features/login/page'
 import './App.css'
 
 function App() {
@@ -34,12 +35,12 @@ function App() {
           navigateToLogin={navigateToLogin}
         />
       )}
-      {/* {currentPage === "login" && (
+      {currentPage === "login" && (
         <LoginPage
           navigateToPlay={navigateToPlay}
           navigateToAbout={navigateToAbout}
         />
-      )} */}
+      )}
     </>
   )
 }

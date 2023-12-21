@@ -36,6 +36,7 @@ header{
 
 .pane{
   background-color: var(--secondary-bg-color);
+  box-shadow: var(--default-drop-shadow);
 }
 
 footer{

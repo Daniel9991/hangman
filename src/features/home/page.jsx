@@ -1,7 +1,11 @@
 import Button from '../../components/button/button'
 import './home.css'
 
-export default function HomePage(){
+export default function HomePage({
+  navigateToPlay,
+  navigateToLogin,
+  navigateToAbout,
+}){
 
   return (
     <div className='page'>
@@ -24,7 +28,7 @@ export default function HomePage(){
                     width: "43px",
                     margin: "2rem auto 0"
                   }}
-                  src="../../assets/images/good_guy.png"
+                  src="./assets/images/good_guy.png"
                   alt="image of a pixelated man" 
                 />    
               </p>
@@ -32,9 +36,9 @@ export default function HomePage(){
             <section className='home-pane-section home-pane-buttons-section'>
               <p>You  may  log  in  to  save  your  highest  score,  or play  as  an  anonymous  hero.</p>
               <div className="home-pane-buttons-wrapper">
-                <Button width='full'>Play</Button>
-                <Button width='full'>Log In</Button>
-                <Button width='full'>About</Button>
+                <Button onClick={navigateToPlay} width='full'>Play</Button>
+                <Button onClick={navigateToLogin} width='full'>Log In</Button>
+                <Button onClick={navigateToAbout} width='full'>About</Button>
               </div>
             </section>
           </div>

@@ -1,0 +1,30 @@
+.about-main{
+  width: 100%;
+  max-width: 1060px;
+  margin: 4rem auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about-game-rules{
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-pane{
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.about-pane-group{
+  font-size: 0.875rem;
+}
+
+.about-pane-group-title{
+  margin-bottom: 0.75rem;
+}

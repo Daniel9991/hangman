@@ -1,0 +1,16 @@
+.word-letters-wrapper{
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.word-letter{
+  font-family: Karmatic-Arcade;
+  font-size: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid black;
+  width: 46px;
+  height: 31px;
+  display: grid;
+  place-content: center;
+}

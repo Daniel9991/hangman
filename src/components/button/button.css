@@ -11,3 +11,9 @@
 .button:hover{
   background-color: var(--button-bg-color-hover);
 }
+
+.button:disabled{
+  background-color: var(--incorrect-letter-bg);
+  cursor: default;
+  color: black;
+}

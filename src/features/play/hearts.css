@@ -1,0 +1,9 @@
+.hearts-wrapper{
+  display: flex;
+  gap: 1rem;
+}
+
+.heart{
+  display: block;
+  width: 46px;
+}

@@ -1,0 +1,32 @@
+.letter-buttons-wrapper{
+  display: grid;
+  grid-template-columns: repeat(6, 46px);
+  gap: 1rem;
+}
+
+.letter-button{
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border: 2px solid black;
+  font-family: Karmatic-Arcade;
+  font-size: 1.25rem;
+}
+
+.unpressed-button:hover{
+  cursor: pointer;
+}
+
+.unpressed-button{
+  background-color: var(--secondary-bg-color);
+}
+
+.correct-button{
+  background-color: var(--correct-letter-bg);
+}
+
+.incorrect-button{
+  background-color: var(--incorrect-letter-bg);
+}
+
